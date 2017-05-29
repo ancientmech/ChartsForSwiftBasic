@@ -226,6 +226,11 @@ let dataSet = BarChartDataSet(values: [entry1, entry2, entry3], label: "Widgets 
 let data = BarChartData(dataSets: [dataSet])
 barChart.data = data
 barChart.chartDescription?.text = "Number of Widgets by Type"
+
+//All other additions to this function will go here
+
+//This must stay at end of function
+barChart.notifyDataSetChanged()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 And the following to the `pieChartUpdate()`function:
@@ -238,6 +243,11 @@ let dataSet = PieChartDataSet(values: [entry1, entry2, entry3], label: "Widget T
 let data = PieChartData(dataSet: dataSet)
 pieChart.data = data
 pieChart.chartDescription?.text = "Share of Widgets by Type"
+
+//All other additions to this function will go here
+
+//This must stay at end of function
+pieChart.notifyDataSetChanged()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This will set up two basic charts with the default settings from the library.
@@ -250,7 +260,10 @@ this:
 
  
 
-Moving any of the sliders should change the value of the charts.
+Moving any of the sliders should change the value of the charts. The final
+statement in these functions should remain last as we make other additions; this
+signals to the chart object to recalculate its features on the basis of the new
+data.
 
  
 
@@ -311,6 +324,13 @@ it will take on whatever color we set as the background color.
 
  
 
+Let’s also color the bar chart. Add the following to the `barChartUpdate()`
+function:
+
+ 
+
+ 
+
 ### Text
 
 In addition to color, it is possible to change the font and size of the text on
@@ -331,6 +351,14 @@ Here I am changing the legend and title fonts and moving the chart title from
 the bottom-right to the top-left. Note that the default offset for this item is
 (0, 0), which is in the bottom right corner of the view (as opposed the more
 typical top-left origin)
+
+ 
+
+Finally you should see this when you build and run:
+
+ 
+
+(final image here)
 
  
 
