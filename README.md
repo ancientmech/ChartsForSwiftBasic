@@ -35,6 +35,10 @@ I created this example project using the following versions:
 
 -   Charts 3.0.2
 
+-   CoCoa Pods 1.2.1
+
+-   iOS 10
+
  
 
 Starting a Project in Xcode using with Charts and Cocoa Pods
@@ -52,7 +56,7 @@ Your Podfile should now look something like this:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Uncomment the next line to define a global platform for your project
-    platform :ios, '9.0'
+# platform :ios, '9.0'
 
 target 'Your Project Name' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
