@@ -113,7 +113,7 @@ like this:
 
  
 
-(setup image)
+![](https://github.com/annalizhaz/ChartsForSwiftBasic/blob/master/Tutorial%20Images/setup.png)
 
  
 
@@ -256,7 +256,7 @@ this:
 
  
 
-(first build image)
+![](https://github.com/annalizhaz/ChartsForSwiftBasic/blob/master/Tutorial%20Images/initial.png)
 
  
 
@@ -358,7 +358,7 @@ Finally you should see this when you build and run:
 
  
 
-(final image here)
+![](https://github.com/annalizhaz/ChartsForSwiftBasic/blob/master/Tutorial%20Images/final.png)
 
  
 
